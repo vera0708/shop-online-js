@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM-ShopOnline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal__container">
+            <h2 class="modal__title">Добавить товар</h2>
+            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <fieldset class="form__box box">
+                    <label class="box__label box__label-name">
+                        <span class="box__span">Наименование</span>
+
+                        <input class="box__input" type="text" name="name" required>
+                    </label>
+                    <label class="box__label box__label-category">
+                        <span class="box__span">Категория</span>
+
+                        <input class="box__input" type="text" name="category" required>
+                    </label>
+
+
+                    <label class="box__label box__label-units">
+                        <span class="box__span">Единицы измерения</span>
+                        <input class="box__input" type="text" name="units">
+                    </label>
+
+                    <label class="box__label box__label-discount" for="discount">
+                        <span class="box__span">Дисконт</span>
+                        <div class="box-discount">
+                            <input class="box__input box-discount__input-check" type="checkbox"
+                                aria-label="Добавить скидку">
+                            <input class="box__input box-discount__input-discount" type="number" name="discount"
+                                id="discount">
+                        </div>
+                    </label>
+
+                    <label class="box__label box__label-description">
+                        <span class="box__span">Описание</span>
+                        <textarea class="box__text" name="description"></textarea>
+                    </label>
+                    <label class="box__label box__label-count">
+                        <span class="box__span">Количество</span>
+                        <input class=" box__input" type="number" name="count">
+                    </label>
+                    <label class="box__label box__label-price">
+                        <span class="box__span">Цена</span>
+                        <input class="box__input" type="number" name="price">
+                    </label>
+                    <label class="box__label-img">
+                        <span class="box__label-img-span">Добавить изображение</span>
+                        <input class="box__file visually-hidden" type="file" name="file" accept="image/jpg">
+                    </label>
+                </fieldset>
+
+                <button class="form__button" type="submit">Добавить товар</button>
+                <button class="form__close" type="button">
+                    <!-- &#10006; -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+                        <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
