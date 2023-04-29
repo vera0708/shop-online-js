@@ -55,14 +55,14 @@ textarea {
     padding: 0;
 }
 
-.table {
+.modal-table {
     position: fixed;
     inset: 0;
     display: flex;
     padding: 20px;
 }
 
-.table__container {
+.modal-table__container {
     position: relative;
     flex-basis: 1300px;
     padding: 79px 100px 110px 100px;
@@ -71,7 +71,7 @@ textarea {
     margin: auto;
 }
 
-.table__first-line {
+.modal-table__first-line {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -82,7 +82,7 @@ textarea {
     border-bottom: 1px solid #C6C2DE;
 }
 
-.table__title {
+.modal-table__title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -93,8 +93,22 @@ textarea {
     color: #6E6893;
 }
 
-.table__total-info {
+.modal-table__total-info {
     display: flex;
+}
+
+.modal-table_total-info__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6E6893;
+}
+
+.modal-table__total-info__sum {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #6D5BD0;
 }
 
 .table__complete {
@@ -104,19 +118,7 @@ textarea {
 
 }
 
-.table_total-info__text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6E6893;
-}
 
-.table__total-info__sum {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 17px;
-    color: #6D5BD0;
-}
 
 .form__button {
     background: #6D5BD0;
@@ -139,21 +141,13 @@ textarea {
     color: #e6f389;
 }
 
-.box__label-img {
-    background: #6D5BD0;
-    border-radius: 6px;
-    color: #FFFFFF;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    min-width: 250px;
-    text-align: center;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.box__label-img-span {
+.table__head {
+    display: flex;
+    background-color: #F4F2FF;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
+    color: #6E6893;
 }
