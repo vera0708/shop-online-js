@@ -115,12 +115,28 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 15px 20px;
 }
 
+.table__complete-filter {
+    display: flex;
+    background-color: #FFFFFF;
+    background-image: url('./img/icons/filter.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    border: 1px solid #C6C2DE;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #25213B;
+    padding: 11px 10px 10px 40px;
+}
 
+.table__complete-search {}
 
-.form__button {
+.table__complete-submit {
     background: #6D5BD0;
     border-radius: 6px;
     font-weight: 600;
@@ -133,16 +149,23 @@ textarea {
     min-width: 200px;
 }
 
-.form__button:hover {
+.table__complete-submit:hover {
     opacity: 0.6;
 }
 
-.form__button:focus {
+.table__complete-submit:focus {
     color: #e6f389;
 }
 
+.table {
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: auto;
+}
+
 .table__head {
-    display: flex;
     background-color: #F4F2FF;
     font-weight: 600;
     font-size: 12px;
