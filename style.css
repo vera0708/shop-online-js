@@ -251,6 +251,43 @@ textarea {
     text-transform: uppercase;
 }
 
+.form__img-notice__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #D80101;
+    margin-top: 20px;
+}
+
+.form__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 28px;
+    padding-right: 29px;
+}
+
+.form__total-info {
+    display: flex;
+}
+
+.form__total-info__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6E6893;
+}
+
+.form__total-info__sum {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    color: #6D5BD0;
+}
+
 .form__button {
     background: #6D5BD0;
     border-radius: 6px;
@@ -262,7 +299,6 @@ textarea {
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: 200px;
-    margin-left: 345px;
 }
 
 .form__button:hover {

@@ -54,13 +54,24 @@
                         <span class="box__span">Цена</span>
                         <input class="box__input" type="number" name="price">
                     </label>
+                    <div class="box__img-notice">
+                        <p class="form__img-notice__text">Изображение не должно
+                            превышать размер 1 Мб</p>
+                    </div>
                     <label class="box__label-img">
                         <span class="box__label-img-span">Добавить изображение</span>
                         <input class="box__file visually-hidden" type="file" name="file" accept="image/jpg">
                     </label>
                 </fieldset>
 
-                <button class="form__button" type="submit">Добавить товар</button>
+                <div class="form__total">
+                    <div class="form__total-info">
+                        <p class="form__total-info__text">Итоговая стоимость: </p>
+                        <p class="form__total-info__sum"> $ 900.00</p>
+                    </div>
+                    <button class="form__button" type="submit">Добавить товар</button>
+                </div>
+
                 <button class="form__close" type="button">
                     <!-- &#10006; -->
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
