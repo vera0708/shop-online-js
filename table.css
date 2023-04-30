@@ -116,7 +116,12 @@ textarea {
     padding: 15px 20px;
 }
 
-.table__complete-filter {
+.table__complete-seeking {
+    display: flex;
+    gap: 20px;
+}
+
+.table__button-filter {
     display: flex;
     background-color: #FFFFFF;
     background-image: url('./img/icons/filter.svg');
@@ -132,9 +137,45 @@ textarea {
     padding: 11px 10px 10px 40px;
 }
 
-.table__complete-search {}
+.table__label {
+    position: relative;
+    background-color: #F4F2FF;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6E6893;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    min-width: 392px;
+    cursor: pointer;
+}
 
-.table__complete-submit {
+.table__input-search {
+    position: relative;
+    background-color: #F4F2FF;
+    width: 300px;
+}
+
+.table__label::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('./img/icons/search.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.table__input-text {
+    position: absolute;
+    left: 40px;
+}
+
+.table__button-submit {
     background: #6D5BD0;
     border-radius: 6px;
     font-weight: 600;
@@ -147,11 +188,11 @@ textarea {
     min-width: 200px;
 }
 
-.table__complete-submit:hover {
+.table__button-submit:hover {
     opacity: 0.6;
 }
 
-.table__complete-submit:focus {
+.table__button-submit:focus {
     color: #e6f389;
 }
 
@@ -290,6 +331,7 @@ textarea {
     transform: rotate(180deg);
 }
 
+.table__label,
 .table__complete-filter:hover,
 .footer__show-page__number:hover,
 .footer__button-back:hover,
