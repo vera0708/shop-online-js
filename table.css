@@ -55,14 +55,12 @@ textarea {
     padding: 0;
 }
 
-.modal-table {
-    position: fixed;
-    inset: 0;
+.main-table {
     display: flex;
     padding: 20px;
 }
 
-.modal-table__container {
+.main-table__container {
     position: relative;
     flex-basis: 1300px;
     padding: 79px 100px 110px 100px;
@@ -71,7 +69,7 @@ textarea {
     margin: auto;
 }
 
-.modal-table__first-line {
+.main-table__first-line {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -82,7 +80,7 @@ textarea {
     border-bottom: 1px solid #C6C2DE;
 }
 
-.modal-table__title {
+.main-table__title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -93,18 +91,18 @@ textarea {
     color: #6E6893;
 }
 
-.modal-table__total-info {
+.main-table__total-info {
     display: flex;
 }
 
-.modal-table_total-info__text {
+.main-table_total-info__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #6E6893;
 }
 
-.modal-table__total-info__sum {
+.main-table__total-info__sum {
     font-weight: 700;
     font-size: 16px;
     line-height: 17px;
@@ -157,17 +155,20 @@ textarea {
     color: #e6f389;
 }
 
-.modal-table__table {
+.main-table__table {
     position: relative;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    overflow: auto;
 }
+
+/* .table__content {
+    overflow-x: auto;
+} */
 
 .table__content-head {
     background-color: #F4F2FF;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.05em;
@@ -203,7 +204,7 @@ textarea {
 
 .table__content__second-column {
     display: flex;
-    width: 290px;
+    width: 286px;
     justify-content: flex-start;
 }
 
@@ -215,7 +216,7 @@ textarea {
 
 .table__content__fourth-column {
     display: flex;
-    width: 52px;
+    width: 56px;
     justify-content: center;
 }
 
@@ -241,4 +242,57 @@ textarea {
     display: flex;
     width: 135px;
     justify-content: center;
+}
+
+.footer {
+    display: flex;
+    padding: 15px;
+    background-color: #F4F2FF;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #6E6893;
+    justify-content: flex-end;
+}
+
+.footer__container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.footer__show-page {
+    display: flex;
+}
+
+.footer__show-page__number {
+    display: flex;
+    background-image: url(./img/icons/footer-polygon.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #6E6893;
+    padding-left: 5px;
+    padding-right: 13px;
+}
+
+.footer__button-back {
+    color: #6E6893;
+}
+
+.footer__button-head {
+    color: #6E6893;
+    transform: rotate(180deg);
+}
+
+.table__complete-filter:hover,
+.footer__show-page__number:hover,
+.footer__button-back:hover,
+.footer__button-head:hover {
+    opacity: 0.6;
 }
