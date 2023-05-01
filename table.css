@@ -203,9 +203,9 @@ textarea {
     border-radius: 8px;
 }
 
-/* .table__content {
+.table__content {
     overflow-x: auto;
-} */
+}
 
 .table__content-head {
     background-color: #F4F2FF;
@@ -296,6 +296,11 @@ textarea {
     cursor: pointer;
 }
 
+.eighth-column_icon:hover {
+    background-color: #C6C2DE;
+    border-radius: 50%;
+}
+
 .eighth-column_icon-img {
     background-image: url(./img/icons/icon_image.svg);
 }
@@ -358,10 +363,13 @@ textarea {
     transform: rotate(180deg);
 }
 
-.table__label,
+.table__button-filter:hover,
+.table__label:hover,
 .table__complete-filter:hover,
 .footer__show-page__number:hover,
 .footer__button-back:hover,
 .footer__button-head:hover {
     opacity: 0.6;
 }
+
+@media (max-width:1024px) {}
