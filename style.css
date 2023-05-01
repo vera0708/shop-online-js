@@ -16,10 +16,10 @@ fieldset {
 
 legend {
     display: block;
-    font-size: 12px;
 }
 
 body {
+    min-width: 320px;
     margin: 0;
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -40,6 +40,11 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 button {
     padding: 0;
     border: 0;
@@ -50,6 +55,12 @@ input,
 textarea {
     border: none;
     padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .visually-hidden {
