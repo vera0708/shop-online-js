@@ -145,7 +145,7 @@ ul {
 .table__button-filter {
     display: flex;
     background-color: #FFFFFF;
-    background-image: url('./img/icons/filter.svg');
+    background-image: url('../img/icons/filter.svg');
     background-position: left;
     background-repeat: no-repeat;
     background-position-x: 10px;
@@ -186,7 +186,7 @@ ul {
     left: 10px;
     width: 20px;
     height: 20px;
-    background-image: url('./img/icons/search.svg');
+    background-image: url('../img/icons/search.svg');
     background-position: left;
     background-repeat: no-repeat;
 }
@@ -323,19 +323,19 @@ ul {
 }
 
 .eighth-column_icon-img {
-    background-image: url(./img/icons/icon_image.svg);
+    background-image: url(../img/icons/icon_image.svg);
 }
 
 .eighth-column_icon-no-img {
-    background-image: url(./img/icons/icon_no-image.svg);
+    background-image: url(../img/icons/icon_no-image.svg);
 }
 
 .eighth-column_icon-edit {
-    background-image: url(./img/icons/icons_edit.svg);
+    background-image: url(../img/icons/icons_edit.svg);
 }
 
 .eighth-column_icon-del {
-    background-image: url(./img/icons/icon_delete-cart.svg);
+    background-image: url(../img/icons/icon_delete-cart.svg);
 }
 
 .footer {
@@ -362,7 +362,7 @@ ul {
 
 .footer__show-page__number {
     display: flex;
-    background-image: url(./img/icons/footer-polygon.svg);
+    background-image: url(../img/icons/footer-polygon.svg);
     background-position: right;
     background-repeat: no-repeat;
     background-position-x: 25px;
